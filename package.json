@@ -1,0 +1,61 @@
+{
+    "name": "widget-template-vue",
+    "version": "2.0.7",
+    "description": "Widget Template using Vue.js 3 with option API & Vuetify 3",
+    "main": "index.html",
+    "scripts": {
+        "build": "webpack --config-name prod --progress",
+        "postinstall": "npx @widget-lab/widget-templates-config",
+        "postversion": "git push --follow-tags",
+        "lint": "eslint src/**/*.{js,vue}",
+        "lintFix": "eslint src/**/*.{js,vue} --fix",
+        "start": "webpack serve --config-name dev --open --progress",
+        "startS3": "webpack serve --config-name devS3 --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@itgit.dsone.3ds.com:widget-lab/widget-template-vue.git"
+    },
+    "author": "widget-lab",
+    "license": "",
+    "prettier": "@widget-lab/prettier-config-widgetlab",
+    "browserslist": [
+        "extends @widget-lab/browserslist-config-widgetlab"
+    ],
+    "devDependencies": {
+        "@babel/preset-env": "x",
+        "@mdi/font": "x",
+        "@vue/compiler-sfc": "3.x",
+        "@widget-lab/browserslist-config-widgetlab": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/browserslist-config-widgetlab/dist/widget-lab-browserslist-config-widgetlab-0.3.0.tgz",
+        "@widget-lab/eslint-config-widgetlab": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/eslint-config-widgetlab/dist/widget-lab-eslint-config-widgetlab-3.0.0-beta.3.tgz",
+        "@widget-lab/prettier-config-widgetlab": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/prettier-config-widgetlab/dist/widget-lab-prettier-config-widgetlab-1.1.0.tgz",
+        "@widget-lab/widget-templates-config": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/widget-templates-config/dist/widget-lab-widget-templates-config-2.3.2.tgz",
+        "@widget-lab/widget-templates-webpack-configs": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/widget-templates-webpack-configs/dist/widget-lab-widget-templates-webpack-configs-2.4.2.tgz",
+        "babel-loader": "x",
+        "css-loader": "6.7.3",
+        "sass": "x",
+        "sass-loader": "x",
+        "style-loader": "x",
+        "vue-loader": "x",
+        "webpack": "x",
+        "webpack-cli": "x",
+        "webpack-dev-server": "x",
+        "webpack-merge": "x",
+        "webpack-plugin-vuetify": "x"
+    },
+    "dependencies": {
+        "@widget-lab/3ddashboard-utils": "https://btcc.s3-eu-west-1.amazonaws.com/widget-lab/npm/3ddashboard-utils/dist/widget-lab-3ddashboard-utils-2.2.12.tgz",
+        "chart.js": "^4.4.7",
+        "core-js": "3.x",
+        "mqtt": "^5.10.3",
+        "pinia": "2.x",
+        "regenerator-runtime": "0.x",
+        "vue": "3.x",
+        "vue-chartjs": "^5.3.2",
+        "vue-router": "^4.5.0",
+        "vuetify": "3.x"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
