@@ -79,33 +79,34 @@ export default {
                 geojson: {
                     type: "FeatureCollection",
                     name: "sensor-points",
-                    crs: { type: "name", properties: { name: "urn:ogc:def:crs:EPSG::3857" } },
+                    crs: { type: "name", properties: { name: "urn:ogc:def:crs:EPSG::7855" } },
                     features: [
+                        // 344778.2247	5966176.809 344779.2247	5966176.809
                         {
                             type: "Feature",
                             properties: { "id": 1, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
-                            geometry: { type: "Point", coordinates: [16257093.54, -4650535.21, 150] }
+                            geometry: { type: "Point", coordinates: [344778.2247, 5966176.809, 200] }
                         },
                         {
                             type: "Feature",
                             properties: { "id": 2, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
-                            geometry: { type: "Point", coordinates: [16256144.86, -4656185.54, 150] }
+                            geometry: { type: "Point", coordinates: [344779.2247, 5966176.809, 200] }
                         },
-                        {
-                            type: "Feature",
-                            properties: { "id": 3, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
-                            geometry: { type: "Point", coordinates: [16269165.72, -4652406.49, 150] }
-                        },
-                        {
-                            type: "Feature",
-                            properties: { "id": 4, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
-                            geometry: { type: "Point", coordinates: [16260321.26, -4661436.45, 150] }
-                        },
-                        {
-                            type: "Feature",
-                            properties: { "id": 5, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
-                            geometry: { type: "Point", coordinates: [16263142.95, -4655997.14, 150] }
-                        }
+                        // {
+                        //     type: "Feature",
+                        //     properties: { "id": 3, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
+                        //     geometry: { type: "Point", coordinates: [16269165.72, -4652406.49, 150] }
+                        // },
+                        // {
+                        //     type: "Feature",
+                        //     properties: { "id": 4, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
+                        //     geometry: { type: "Point", coordinates: [16260321.26, -4661436.45, 150] }
+                        // },
+                        // {
+                        //     type: "Feature",
+                        //     properties: { "id": 5, "Temperature": 0, "Humidity": 0, "Wind Speed": 0 },
+                        //     geometry: { type: "Point", coordinates: [16263142.95, -4655997.14, 150] }
+                        // }
                     ]
                 },
                 layer: {
